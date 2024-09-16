@@ -6,7 +6,7 @@ class FreeEveryTenthExchangeFeeDecorator(
 ): ExchangeFeeDecorator {
 
     override fun calculate(amount: Double): Double {
-        return if (exchangeCount % 3 == 0) {
+        return if (exchangeCount % 10 == 0) {
             0.0 // Free for every tenth exchange
         } else {
             wrappedDecorator.calculate(amount) // Delegate to the wrapped decorator
