@@ -1,5 +1,7 @@
 # CurrencyExchangeApp
 
+Test task is in master branch
+
 Clean architecture with separating app into domain, data and feature modules is appliedm
 
 Domain logic is in UseCases - atomic business rules
